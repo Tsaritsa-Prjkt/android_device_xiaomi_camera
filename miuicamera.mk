@@ -9,7 +9,9 @@ CAMERA_VENDOR_PATH := vendor/xiaomi/camera
 
 # Permissions
 PRODUCT_COPY_FILES += \
-     $(call find-copy-subdir-files,*,$(CAMERA_PATH)/configs/permissions/,$(TARGET_COPY_OUT_SYSTEM)/etc)
+     $(call find-copy-subdir-files,*,$(CAMERA_PATH)/configs/permissions/default-permissions/,$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions) \
+     $(call find-copy-subdir-files,*,$(CAMERA_PATH)/configs/permissions/permissions/,$(TARGET_COPY_OUT_SYSTEM)/etc/permissions) \
+     $(call find-copy-subdir-files,*,$(CAMERA_PATH)/configs/permissions/sysconfig/,$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig)
 
 # CameraX Config Overwrite
 PRODUCT_COPY_FILES += \
