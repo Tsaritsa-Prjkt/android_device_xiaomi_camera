@@ -56,7 +56,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
    log.tag.CHIUSECASE=ERROR
 
 PRODUCT_VENDOR_PROPERTIES += \
-   persist.vendor.camera.logInfoMask=false
+   persist.vendor.camera.logInfoMask=false \
+   persist.vendor.camera.privapp.list=com.android.camera
 
 # Sepolicy Camera
 BOARD_VENDOR_SEPOLICY_DIRS += \
@@ -98,9 +99,5 @@ PRODUCT_PACKAGES += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     MiuiCameraOverlay
-
-# System Properties
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.privapp.list=com.android.camera
 
 $(call inherit-product, $(CAMERA_VENDOR_PATH)/camera-vendor.mk)
