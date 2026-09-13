@@ -95,9 +95,7 @@ PRODUCT_PACKAGES += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    MiuiCameraOverlay \
-    MiuiCameraOverlayLos \
-    MiuiCameraOverlayAosp
+    MiuiCameraOverlay
 
 # System Properties
 PRODUCT_SYSTEM_PROPERTIES += \
