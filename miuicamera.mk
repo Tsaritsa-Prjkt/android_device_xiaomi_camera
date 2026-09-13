@@ -56,7 +56,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
    log.tag.CHIUSECASE=ERROR
 
 PRODUCT_VENDOR_PROPERTIES += \
-   persist.vendor.camera.logInfoMask=false \
+   persist.vendor.camera.logInfoMask=0 \
    persist.vendor.camera.privapp.list=com.android.camera
 
 # Sepolicy Camera
